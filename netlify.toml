@@ -8,11 +8,6 @@
   NODE_VERSION = "19"
   NETLIFY_ENV = "production"
 
-# Configura as regras de redirecionamento e reescrita do Netlify
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 [[headers]]
   # Configura os cabeçalhos HTTP
