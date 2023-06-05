@@ -4,8 +4,8 @@ import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { Roboto } from 'next/font/google'
 
-import NavBar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import NavBar from '../components/Navbar/NavBar'
+import Footer from '../components/Footer/Footer'
 
 // const FooterComp = dynamic (() => import('@/components/Footer'))
 // const NavBarComp = dynamic (() => import('@/components/Navbar'))
