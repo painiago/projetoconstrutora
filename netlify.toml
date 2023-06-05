@@ -5,7 +5,7 @@
 
 # Define as variáveis de ambiente necessárias
 [build.environment]
-  NODE_VERSION = "14"
+  NODE_VERSION = "19"
   NETLIFY_ENV = "production"
 
 # Configura as regras de redirecionamento e reescrita do Netlify
