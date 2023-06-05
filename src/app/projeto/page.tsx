@@ -8,10 +8,10 @@ import Image from "next/image";
 import capaempresa from '../../../public/img/capaempresa.png'
 import BtnContato from "./products/page";
 import dynamic from "next/dynamic";
-
+import { Metadata } from 'next';
 const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Projetos',
   description: 'Projetos realizados por nossa empresa Exhouse Construtora.',
 }

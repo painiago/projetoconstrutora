@@ -14,7 +14,6 @@ import casa3 from '../../public/img/casa3.jpg'
 import { ToastContainer} from 'react-toastify';
 import dynamic from 'next/dynamic';
 
-export const revalidate = 30
 
 const ContatoHomeComponent = dynamic (() => import('./contatohome/page'));
 const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
