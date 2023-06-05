@@ -34,7 +34,7 @@ app.prepare().then(() => {
     return handle(req, res);
   });
 
-  server.use(express.static(path.join(__dirname, 'build')));
+  server.use(express.static(path.join(__dirname, '.next')));
 
   server.listen(3000, (err) => {
     if (err) throw err;
