@@ -11,10 +11,10 @@ import dynamic from "next/dynamic";
 import { Metadata } from 'next';
 const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
 
-export const metadata: Metadata = {
-  title: 'Projetos',
-  description: 'Projetos realizados por nossa empresa Exhouse Construtora.',
-}
+// export const metadata: Metadata = {
+//   title: 'Projetos',
+//   description: 'Projetos realizados por nossa empresa Exhouse Construtora.',
+// }
 
 export default function Projetos() {
   const projects = [

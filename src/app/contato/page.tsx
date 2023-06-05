@@ -8,9 +8,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Contato',
-}
+// export const metadata: Metadata = {
+//   title: 'Contato',
+// }
 export default function Contato() {
   const [campos, setCampos] = useState<{ [key: string]: string }>({
     nome: '',
