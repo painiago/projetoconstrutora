@@ -6,11 +6,11 @@ import { faCircleArrowRight} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import colaborador from '../../public/img/colaborador.png'
-import imgsustentavel from '../../public/img/sustentavel.png'
-import casa1 from '../../public/img/casa1.jpg'
-import casa2 from '../../public/img/casa2.jpg'
-import casa3 from '../../public/img/casa3.jpg'
+import colaborador from '/public/img/colaborador.png'
+import imgsustentavel from '/public/img/sustentavel.png'
+import casa1 from '/public/img/casa1.jpg'
+import casa2 from '/public/img/casa2.jpg'
+import casa3 from '/public/img/casa3.jpg'
 import { ToastContainer} from 'react-toastify';
 import dynamic from 'next/dynamic';
 
@@ -19,11 +19,8 @@ const ContatoHomeComponent = dynamic (() => import('./contatohome/page'));
 const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
 const AlertComp = dynamic (() => import ('@/components/Alert/alert'))
 
-
 export default function Home() {
- 
   return (
-    
     <main className={styles.main}>
       <ScrollTop/>
       <ToastContainer

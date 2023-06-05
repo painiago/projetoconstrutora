@@ -1,4 +1,5 @@
-'use client';import React, { useState } from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

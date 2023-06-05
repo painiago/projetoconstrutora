@@ -3,8 +3,12 @@ import '@/styles/globals.scss'
 import { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { Roboto } from 'next/font/google'
-const FooterComp = dynamic (() => import('@/components/Footer'))
-const NavBarComp = dynamic (() => import('@/components/Navbar'))
+
+import NavBar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+
+// const FooterComp = dynamic (() => import('@/components/Footer'))
+// const NavBarComp = dynamic (() => import('@/components/Navbar'))
 const inter = Roboto({
   weight: ['400'], 
   subsets: ['latin'] })
@@ -44,9 +48,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-      <NavBarComp/>
+      <NavBar/>
         {children}
-       <FooterComp/> 
+       <Footer/> 
         </body>
     </html>
   )
