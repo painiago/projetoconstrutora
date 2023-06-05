@@ -175,6 +175,10 @@
   .sustentavelimg {
     max-width: 100%; /* Ajuste a largura máxima da imagem para que ela se adapte a diferentes tamanhos de tela */
     height: auto; /* Permita que a altura da imagem seja ajustada proporcionalmente */
+  @media (max-width:768px) {
+    width: 150px;
+    height: auto;
+  }
   }
 
 }

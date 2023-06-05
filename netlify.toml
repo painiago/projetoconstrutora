@@ -12,6 +12,6 @@
 [[headers]]
   # Configura os cabeçalhos HTTP
   # Aqui, estamos definindo o cabeçalho "Cache-Control" para 1 dia
-  for = "/*"
+
   [headers.values]
     Cache-Control = "public, max-age=86400"
