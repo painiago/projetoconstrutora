@@ -1,0 +1,261 @@
+.containercapa{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 100px !important;
+
+  h1{
+    font-size: 6.1rem;
+   
+  }
+
+  img{
+    width: 700px;
+    height: auto;
+  }
+}
+
+.containerempresa{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.contentempresa{
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width:768px) {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Adicione esta linha */
+    padding: 0 20px; /* Adicione este espaçamento */
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+    h1{
+      text-align: center;
+    }
+  }
+}
+
+// Section projetos
+.containersection{
+  margin-top: 100px;
+
+  p{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+ 
+}
+
+
+// PROJETOS
+.containerprojetos {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  
+ 
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    
+  }
+  @media (max-width: 668px) {
+    margin-top: 50px;
+    
+  }
+}
+
+.cardsempresa {
+  margin-top: 50px !important;
+  h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    margin-bottom: 50px !important;
+    color: #ff5700;
+    margin-top: 20px;
+  }
+}
+
+.cardsproject {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  @media (max-width: 576px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .allcards {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 6px 6px 18px;
+
+    border-radius: 15px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+      flex-basis: calc(50% - 20px);
+    }
+
+    @media (max-width: 576px) {
+      flex-basis: 90%;
+    }
+
+    .imgfluid {
+      border-radius: 12px;
+      width: 100%;
+      height: 250px; /* Defina a altura desejada para as imagens */
+      object-fit: cover; /* Mantém a proporção e corta a imagem se necessário */
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color:#FF6F00;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    
+    }
+    button:hover{
+      background-color: #f47616 !important;
+    }
+  }
+}
+.btnempresa{
+  display: flex;
+  align-items: center;
+  background-color:#FF6F00;
+  color: #fff;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.arrow{
+  display: inline-flex;
+  padding: 2px;
+  width: 20px;
+  font-size: 15px !important;
+  margin-left: 5px;
+}
+.containerbtn {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  :hover{
+    background-color: #f47616 !important;
+  }
+}
+
+// animação fundo foto estrelas
+
+.stars{
+  position: absolute;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 50px 30px rgb(255, 183, 15),
+    100px 80px rgb(255, 184, 31),
+    80px 120px rgb(255, 240, 25),
+    300px 20px rgb(255, 193, 6),
+    250px 130px rgb(255, 247, 19),
+    200px 50px rgb(255, 187, 29),
+    150px 100px rgb(234, 201, 19),
+    320px 100px rgb(255, 181, 22);
+
+}
+.stars::after{
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+}
+
+.stars{
+	
+	animation: anim-stars 10s linear infinite;
+}
+@keyframes anim-stars {
+  from {
+      transform: translateY(0px);
+  }
+  to {
+      transform: translateY(-150px);
+  }
+}
+
+.stars2{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+  animation: anim-stars 20s linear infinite;
+}
+
+.stars2::after{
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+}
+

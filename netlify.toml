@@ -1,0 +1,22 @@
+# Define as versões dos serviços necessários
+[build]
+  command = "yarn build"
+  publish = ".next/"  # Atualize para a pasta correta
+
+# Define as variáveis de ambiente necessárias
+[build.environment]
+  NODE_VERSION = "14"
+  NETLIFY_ENV = "production"
+
+# Configura as regras de redirecionamento e reescrita do Netlify
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  # Configura os cabeçalhos HTTP
+  # Aqui, estamos definindo o cabeçalho "Cache-Control" para 1 dia
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

@@ -1,0 +1,580 @@
+.main{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Welcome section */
+.welcomesection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  background-color: #000;
+  background-image: url('../../public/img/capa.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.welcomesection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.text h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+  font-family: var(--font-primary);
+  margin-bottom: 25px;
+  line-height: 1;
+
+}
+
+.text span {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.web{
+  font-size: 3rem !important;
+}
+@media (max-width: 767px) {
+  .text h1 {
+    font-size: 3.5rem;
+  }
+
+  .text span {
+    font-size: 1.5rem;
+  }
+}
+
+// ICONES REDES SOCIAIS
+.web{
+  margin-top:  40rem !important;
+}
+.socialicons{
+  position: relative;
+  margin-top: 50px;
+  color: white;
+}
+.socialicons svg {
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+
+  cursor: pointer;
+}
+
+.iconFace:hover{
+  // color: rgb(160, 160, 255);
+  color: #f36c04;
+}
+
+.iconIns:hover{
+  // color: rgb(255, 141, 160);
+  color: #f36c04;
+}
+.iconTiktok:hover{
+  // color: #ffd078;
+  color: #f36c04;
+}
+
+// CONSTRUÇÃO SUSTENTAVEL
+
+.backcolor {
+  background-color: #eff8f7;
+  width: 100%;
+  height: 100%;
+  box-shadow: 
+    0 10px 20px -20px rgba(0, 0, 0, 0.2),
+    0 -20px 10px -10px rgba(0, 0, 0, 0.2),
+    10px 0 10px -10px rgba(0, 0, 0, 0.2),
+    -10px 0 10px -10px rgba(0, 0, 0, 0.2),
+    10px 10px 10px -10px rgba(0, 0, 0, 0.2),
+    -20px 10px 10px -10px rgba(0, 0, 0, 0.2),
+    10px -10px 10px -10px rgba(0, 0, 0, 0.2),
+    -22px -10px 10px -10px rgba(0, 0, 0, 0.2);
+}
+
+// .containerSobre::before{
+//   content: '';
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%);
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.5);
+// }
+.containerSobre{
+  
+  height: 0 auto;
+  max-width: 1000px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  padding: 5rem 20px; /* Adiciona um espaçamento interno ao contêiner */
+
+  p{
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto */
+    padding: 0.75rem;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 20px;
+    color: #927D7D;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5; /* Define o espaçamento entre as linhas */
+  }
+  span{
+    
+  }
+  h2{
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 36px; /* Define o tamanho da fonte do cabeçalho */
+    margin-bottom: 50px !important; /* Adiciona um espaçamento abaixo do cabeçalho */
+    color: #FF5700;
+    margin-top: 20px;
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+    padding: 3rem 20px; /* Ajuste o espaçamento interno para dispositivos móveis */
+  }
+  .imageContainer {
+    display: flex;
+    justify-content: center; /* Altere para "center" para centralizar a imagem em todos os dispositivos */
+  }
+  
+  .sustentavelimg {
+    max-width: 100%; /* Ajuste a largura máxima da imagem para que ela se adapte a diferentes tamanhos de tela */
+    height: auto; /* Permita que a altura da imagem seja ajustada proporcionalmente */
+  }
+
+}
+
+
+// ICON IMAGEM SUSTENTAVEL
+.imageContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sustentavelimg{
+  width: 180px;
+  height: 120px;
+}
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 900px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  
+}
+@media (max-width:878px) {
+  .box{
+    margin-top: 250px !important;
+  }
+  
+}
+@media (max-width:574px) {
+  .box{
+    margin-top: 450px !important;
+  }
+  
+}
+
+.cards {
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: block;
+  width: 100%;
+  height: 320px;
+  background-color: #FF5700;
+  border-radius: 12px;
+  padding: 12px;
+  p:nth-of-type(1) {
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+  }
+
+  p:nth-of-type(2) {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: white;
+  }
+}
+@media (max-width:778px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 320px;
+    background-color: #FF5700;
+    border-radius: 12px;
+    text-align: center;
+  
+    h2 {
+      font-size: 5rem;
+      color: white;
+      margin: 10px 0;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      padding: 10px;
+      color: white;
+    }
+  }
+  
+  
+}
+
+.card1 {
+  background-color: #FF8426;
+}
+
+.card2 {
+  background-color: #FF6126;
+}
+
+.card3 {
+  background-color: #676767;
+}
+
+// PROJETOS
+.containerprojetos {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  
+
+  @media (max-width: 768px) {
+    margin-top: 300px;
+    
+  }
+  @media (max-width: 668px) {
+    margin-top: 500px;
+    
+  }
+}
+
+.cardsprojetos {
+  margin-top: 250px !important;
+  h3 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    margin-bottom: 50px !important;
+    color: #ff5700;
+    margin-top: 20px;
+  }
+}
+
+.cardsproject {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   
+  @media (max-width: 576px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  .allcards {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 6px 6px 18px;
+
+    border-radius: 15px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+      flex-basis: calc(50% - 20px);
+      
+    }
+
+    @media (max-width: 576px) {
+      flex-basis: 90%;
+    }
+
+    .imgfluid {
+      border-radius: 12px;
+      width: 100%;
+      height: 250px; /* Defina a altura desejada para as imagens */
+      object-fit: cover; /* Mantém a proporção e corta a imagem se necessário */
+    }
+
+    p:nth-of-type(1) {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    button {
+      background-color:#FF6F00;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      
+      
+    }
+    button:hover{
+      background-color: #f47616;
+    }
+    
+  }
+}
+.maisprojetos{
+  display: flex;
+  align-items: center;
+  background-color:#288202;
+  color: #fff;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.arrow{
+  display: inline-flex;
+  padding: 2px;
+  width: 20px;
+  font-size: 15px !important;
+  margin-left: 5px;
+}
+.buttonContainer {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  
+  button:hover{
+    background-color: #358c10 !important;
+  }
+}
+
+.buttonContainer2 {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  
+  button:hover{
+    background-color: #f47616 !important;
+  }
+}
+
+// SECTION COLABORADOR -------
+.containerconferir {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+.contentconferir {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  article {
+    padding: 12px;
+  }
+
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 5.4rem;
+    color: #ff5700;
+
+    @media (max-width: 768px) {
+      font-size: 5rem;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 410px) {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    background-color: #f36c04;
+    color: #fff;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: none;
+    
+  }
+}
+
+.colaborador {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+
+  @media (max-width: 768px) {
+    max-width: none;
+  }
+}
+
+
+// SECTION SOBRE A EMPRESA
+
+
+// CONSTRUÇÃO SUSTENTAVEL
+.containercolorsobre {
+  background-color: #F8F3EA;
+  width: 100%;
+  height: 100%;
+  box-shadow: 
+    0 10px 20px -20px rgba(0, 0, 0, 0.2),
+    
+}
+
+.containersobreempresa{
+  
+  height: 0 auto;
+  max-width: 1000px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  padding: 5rem 20px; /* Adiciona um espaçamento interno ao contêiner */
+
+  p{
+    border-left: #FF5700 2px solid;
+    font-size: 1.6rem; /* Define o tamanho da fonte do texto */
+    padding: 0.75rem;
+    margin-bottom: 20px;
+    color: #927D7D;
+    font-weight: 400;
+    line-height: 1.5; /* Define o espaçamento entre as linhas */
+  }
+
+  h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 5.4rem; /* Define o tamanho da fonte do cabeçalho */
+    margin-bottom: 50px !important; /* Adiciona um espaçamento abaixo do cabeçalho */
+    color: #FF5700;
+    margin-top: 40px;
+    @media screen and (max-width: 410px) {
+      font-size: 4.7rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 3rem 20px; /* Ajuste o espaçamento interno para dispositivos móveis */
+  }
+ 
+  .imageContainer {
+    display: flex;
+    justify-content: center; /* Altere para "center" para centralizar a imagem em todos os dispositivos */
+  }
+  
+  .sustentavelimg {
+    max-width: 100%; /* Ajuste a largura máxima da imagem para que ela se adapte a diferentes tamanhos de tela */
+    height: auto; /* Permita que a altura da imagem seja ajustada proporcionalmente */
+  }
+
+}
+
+// VIDEO
+.containersectionvideo {
+  width: 100%;
+  height: 100vh;
+ 
+}
+
+.containervideo {
+  position: relative;
+  width: 100%;
+  height: 80%;
+ 
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Cor de preenchimento escuro */
+}
+
+
+

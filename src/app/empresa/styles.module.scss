@@ -1,0 +1,232 @@
+/* Welcome section */
+.welcomesectionempresa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  background-color: #000;
+  background-image: url('../../../public/img/empresa.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.welcomesectionempresa::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.textempresa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+
+  h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 7rem;
+    font-weight: 300;
+    font-family: var(--font-primary);
+    margin-bottom: 25px;
+    line-height: 1;
+  }
+}
+
+// SECTION SOBRE EMPRESA
+.spancontainer{
+  border-left: 2px solid  #FF5700;
+  margin-bottom: 40px;
+}
+
+
+.containerSobre{
+  
+  height: 0 auto;
+  max-width: 1000px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  padding: 5rem 20px; /* Adiciona um espaçamento interno ao contêiner */
+
+  p{
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto */
+    padding: 0.75rem;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 10px;
+    color: #927D7D;
+    font-weight: 400;
+    
+    line-height: 1.5; /* Define o espaçamento entre as linhas */
+  }
+ 
+ 
+
+
+
+  @media screen and (max-width: 768px) {
+    padding: 3rem 20px; /* Ajuste o espaçamento interno para dispositivos móveis */
+  }
+  .imageContainer {
+    display: flex;
+    justify-content: center; /* Altere para "center" para centralizar a imagem em todos os dispositivos */
+  }
+  
+  .sustentavelimg {
+    max-width: 100%; /* Ajuste a largura máxima da imagem para que ela se adapte a diferentes tamanhos de tela */
+    height: auto; /* Permita que a altura da imagem seja ajustada proporcionalmente */
+  }
+
+}
+
+// SECTION EQUIPE EMRPESA
+.containerequipe {
+  max-width: 1360px;
+  margin: 0 auto;
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+.contentequipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #e9e1e1;
+ 
+}
+
+.imagecontainer {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.textcontainer {
+  display: block;
+  padding: 20px;
+  // text-align: center;
+
+  p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  p:nth-of-type(2) {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerequipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentequipe {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .imagecontainer {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+ 
+}
+
+.socialiconsempresa {
+  display: inline;
+  padding: 2px;
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.socialiconsempresa svg {
+  // display: flex;
+  // flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  cursor: pointer;
+
+  @media (max-width:768px) {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    
+  }
+}
+
+.lastext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  max-width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  background-color: #f0eaea;
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  @media (max-width:768px) {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+  }
+}
+
+.containerfrase {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+  p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+.btnempresa{
+  display: flex;
+  align-items: center;
+  background-color:#FF6F00;
+  color: #fff;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.containerbtn {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  button:hover{
+    background-color: #f47616;
+  }
+}
