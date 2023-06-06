@@ -149,7 +149,7 @@ export default function DetailsProjects() {
         <section className={styles.containerdetalhes}>
           <div className={styles.contentdetalhes}>
             <p>{selectedProject.title}</p>
-            <h1>{selectedProject.proprietario}</h1>
+            {/* <h1>{selectedProject.proprietario}</h1> */}
             <div className={styles.contvendedor}>
               <span>
                 <FontAwesomeIcon icon={faUser} className={styles.iconuser} />

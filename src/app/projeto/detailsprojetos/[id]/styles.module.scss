@@ -191,9 +191,20 @@
   }
   
   p:nth-of-type(1){
-    font-size: 1.6rem !important;
+    font-size: 1.5rem !important;
     margin-left: 5px;
   }
+  @media (max-width:768px) {
+    p:nth-of-type(1){
+      font-size: 1.3rem !important;
+      margin-left: 5px;
+    }
+    
+  }
+}
+.iconuser{
+  width: 15px;
+  height: auto;
 }
 
 .contentdetalhes{
@@ -203,13 +214,15 @@
 
   p:nth-of-type(1){
     font-size: 1.5rem;
-    
+    @media (max-width:768px) {
+      font-size: 1.3rem !important;
+    }
   }
  
 
   h1{
     font-family: "Roboto", sans-serif;
-    font-size: 3.5rem;
+    font-size: 2rem !important;
     
     @media (max-width:568px) {
       font-size: 3rem;
@@ -237,10 +250,6 @@
   }
 }
 
-.iconuser{
-  width: 15px;
-  height: auto;
-}
 
 // SECTION LISTA DE PROJETOS
 .containerprojects{
