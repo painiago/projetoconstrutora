@@ -47,7 +47,7 @@ export default function Home() {
               e priorizando o bem-estar dos ocupantes. Contribuímos para um futuro mais sustentável 
               e oferecemos soluções responsáveis aos nossos clientes.</p>          
            <div className={styles.imageContainer}>
-            <Image src={imgsustentavel} alt="" className={styles.sustentavelimg} quality={75}/>
+            <Image src={imgsustentavel} alt="" className={styles.sustentavelimg} quality={75} width={200} height={150} />
         </div>
       </div>
     </section>

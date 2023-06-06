@@ -150,9 +150,7 @@
     text-align: center;
     line-height: 1.5; /* Define o espaçamento entre as linhas */
   }
-  span{
-    
-  }
+ 
   h2{
     text-align: center;
     font-family: "Roboto",sans-serif;
@@ -169,14 +167,15 @@
   }
   .imageContainer {
     display: flex;
-    justify-content: center; /* Altere para "center" para centralizar a imagem em todos os dispositivos */
+    justify-content: center;
   }
   
   .sustentavelimg {
     max-width: 100%; /* Ajuste a largura máxima da imagem para que ela se adapte a diferentes tamanhos de tela */
     height: auto; /* Permita que a altura da imagem seja ajustada proporcionalmente */
-  @media (max-width:768px) {
-    width: 50%;
+ 
+    @media (max-width:768px) {
+    width: 100%;
     height: auto;
   }
   }
@@ -188,11 +187,6 @@
 .imageContainer {
   display: flex;
   justify-content: flex-end;
-}
-
-.sustentavelimg{
-  width: 180px;
-  height: 120px;
 }
 
 
@@ -541,11 +535,6 @@
   .imageContainer {
     display: flex;
     justify-content: center; /* Altere para "center" para centralizar a imagem em todos os dispositivos */
-  }
-  
-  .sustentavelimg {
-    max-width: 100%; /* Ajuste a largura máxima da imagem para que ela se adapte a diferentes tamanhos de tela */
-    height: auto; /* Permita que a altura da imagem seja ajustada proporcionalmente */
   }
 
 }
