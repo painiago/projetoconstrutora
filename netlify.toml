@@ -8,3 +8,10 @@
   NODE_VERSION = "19"
   NETLIFY_ENV = "production"
 
+
+[[headers]]
+  # Configura os cabeçalhos HTTP
+  # Aqui, estamos definindo o cabeçalho "Cache-Control" para 1 dia
+
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

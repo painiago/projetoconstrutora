@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  
-}
-module.exports = {
-  target: 'serverless',
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.cache = {
+        type: 'filesystem',
+      };
+    }
+    return config;
+  },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;
+
