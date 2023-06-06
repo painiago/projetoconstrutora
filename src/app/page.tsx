@@ -10,7 +10,7 @@ import colaborador from '../../public/img/cola2.jpg'
 import imgsustentavel from '/public/img/sustentavel.png'
 import casa1 from '../../public/img/casa1.jpg'
 import casa2 from '../../public/img/casa2.jpg'
-import casa3 from '../../public/img/casa3.jpg'
+import casa3 from '../../public/img/comercial.jpg'
 import { ToastContainer} from 'react-toastify';
 import dynamic from 'next/dynamic';
 
@@ -122,7 +122,7 @@ export default function Home() {
 </section>
 <section className={styles.containersectionvideo}>
   <div className={styles.containervideo}>
-    <video className={styles.video} src="/img/videohome2.mp4" loop autoPlay muted></video>
+    <video className={styles.video} src="/img/videohome22.mp4" loop autoPlay muted></video>
     <div className={styles.overlay}></div>
   </div>
 </section>
