@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 import { useState } from "react";
 import Image from "next/image";
 
-import capaempresa from '../../../public/img/capaempresa.png'
+import capaempresa from '../../../public/img/capem2.jpg'
 import BtnContato from "./products/page";
 import dynamic from "next/dynamic";
 // import { Metadata } from 'next';

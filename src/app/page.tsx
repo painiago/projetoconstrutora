@@ -6,7 +6,7 @@ import { faCircleArrowRight} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import colaborador from '../../public/img/colaborador.png'
+import colaborador from '../../public/img/cola2.jpg'
 import imgsustentavel from '/public/img/sustentavel.png'
 import casa1 from '../../public/img/casa1.jpg'
 import casa2 from '../../public/img/casa2.jpg'
@@ -47,7 +47,7 @@ export default function Home() {
               e priorizando o bem-estar dos ocupantes. Contribuímos para um futuro mais sustentável 
               e oferecemos soluções responsáveis aos nossos clientes.</p>          
            <div className={styles.imageContainer}>
-            <Image src={imgsustentavel} alt="" className={styles.sustentavelimg} />
+            <Image src={imgsustentavel} alt="" className={styles.sustentavelimg} quality={75}/>
         </div>
       </div>
     </section>
@@ -86,7 +86,7 @@ export default function Home() {
     <h3>Nossos Projetos</h3>
     <div className={styles.cardsproject}>
       <div className={styles.allcards}>
-        <Image src={casa1} alt="" className={styles.imgfluid} />
+        <Image src={casa1} alt="" className={styles.imgfluid} quality={75}/>
         <p>Residencial</p>
         <p>Morumbi</p>
        <Link href="/projeto/detailsprojetos/1">
@@ -95,7 +95,7 @@ export default function Home() {
        </Link> 
       </div>
       <div className={styles.allcards}>
-        <Image src={casa2} alt="" className={styles.imgfluid} />
+        <Image src={casa2} alt="" className={styles.imgfluid} quality={75}/>
         <p>Residencial</p>
         <p>Jardin</p>
         <Link href="/projeto/detailsprojetos/2">
@@ -103,7 +103,7 @@ export default function Home() {
         </Link>
       </div>
       <div className={styles.allcards}>
-        <Image src={casa3} alt="" className={styles.imgfluid} />
+        <Image src={casa3} alt="" className={styles.imgfluid} quality={75}/>
         <p>Residencial</p>
         <p>Itaim Bibi</p>
         <Link href="/projeto/detailsprojetos/3">
@@ -144,7 +144,7 @@ export default function Home() {
   </article>
 </div>
 <div>
-  <Image src={colaborador} alt="" className={styles.colaborador} />
+  <Image src={colaborador} alt="" className={styles.colaborador} quality={75}/>
 </div>
 </section>
 <section className={styles.containercolorsobre}>

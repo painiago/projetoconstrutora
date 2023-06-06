@@ -8,6 +8,7 @@ import Modal from "react-modal";
 import { faHeart, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 
 const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
@@ -124,7 +125,7 @@ export default function DetailsProjects() {
               <div className={styles.containeroneimg}>
                 <div onClick={() => openModal(selectedProject.image)}>
                   <div className={styles.imageContainer}>
-                    <img src={selectedProject.image} alt="" className={styles.slideimgone} />
+                    <Image src={selectedProject.image} alt="" className={styles.slideimgone} quality={75}/>
                     <span className={styles.hoverIcon}>
                       <FontAwesomeIcon icon={faEye} />
                     </span>
@@ -133,13 +134,13 @@ export default function DetailsProjects() {
               </div>
               <div className={styles.containerextended}>
                 <div className={styles.slide}>
-                  <img src={selectedProject.imageNext} alt="" className={styles.slideimg}   onClick={() => openModal(selectedProject.imageNext)}/>
+                  <Image src={selectedProject.imageNext} alt="" className={styles.slideimg}   onClick={() => openModal(selectedProject.imageNext)} quality={75}/>
                 </div>
                 <div className={styles.slide}>
-                  <img src={selectedProject.imgNext} alt="" className={styles.slideimg} onClick={() => openModal(selectedProject.imgNext)}/>
+                  <Image src={selectedProject.imgNext} alt="" className={styles.slideimg} onClick={() => openModal(selectedProject.imgNext)} quality={75}/>
                 </div>
                 <div className={styles.slide}>
-                  <img src={selectedProject.oimg} alt="" className={styles.slideimg} onClick={() => openModal(selectedProject.oimg)}/>
+                  <Image src={selectedProject.oimg} alt="" className={styles.slideimg} onClick={() => openModal(selectedProject.oimg)} quality={75}/>
                 </div>
               </div>
             </div>
@@ -196,7 +197,7 @@ export default function DetailsProjects() {
                   onClick={() => handleProjectClick(project.id)}
                 >
                   <div className={styles.imageContainer}>
-                    <img src={project.image} alt="" className={styles.imgfluid} />
+                    <Image src={project.image} alt="" className={styles.imgfluid} quality={75}/>
                     <span className={styles.hoverIcon}>
                       <FontAwesomeIcon icon={faEye} />
                     </span>
@@ -218,7 +219,7 @@ export default function DetailsProjects() {
         overlayClassName={styles.overlay}
         contentLabel="Imagem Modal"
       >
-        <img src={selectedImage} alt="" className={styles.modalImage} />
+        <Image src={selectedImage} alt="imgmodal" className={styles.modalImage} quality={75}/>
       </Modal>
       <BtnContact/>
     </>
