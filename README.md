@@ -6,7 +6,6 @@ Este é um projeto de um site voltado para empresa de construção. Desenvolvido
 
 - Next.js
 - TypeScript
-- Styled Components
 - Scss
 - Yarn
 

@@ -195,13 +195,17 @@
   
   p:nth-of-type(1){
     font-size: 1.5rem !important;
-    margin-left: 5px;
+    strong{
+      font-size: 1.4rem !important;
+    }
   }
 
   @media (max-width:768px) {
     p:nth-of-type(1){
       font-size: 1.3rem !important;
-      margin-left: 5px !important;
+      strong{
+        font-size: 1.4rem !important;
+      }
       
     }
     span{

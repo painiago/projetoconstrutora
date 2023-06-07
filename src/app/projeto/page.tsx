@@ -20,7 +20,7 @@ export default function Projetos() {
   const projects = [
     { id: 1, title: "Morumbi", image: "/img/casa1.jpg" },
     { id: 2, title: "Jardin", image: "/img/casa2.jpg" },
-    { id: 3, title: "Itaim Bibi", image: "/img/casa3.jpg" },
+    { id: 3, title: "Itaim Bibi", image: "/img/comercial.jpg" },
     // Adicione outros projetos aqui
   ];
 

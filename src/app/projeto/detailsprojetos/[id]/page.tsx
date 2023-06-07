@@ -153,7 +153,7 @@ export default function DetailsProjects() {
             <div className={styles.contvendedor}>
               <span>
                 {/* <FontAwesomeIcon icon={faUser} className={styles.iconuser} /> */}
-                <p>{selectedProject.vendedor} - Vendedor</p>
+                <p><strong>Vendedor - </strong> {selectedProject.vendedor} </p>
               </span>
             </div>
             <ul>
@@ -161,7 +161,7 @@ export default function DetailsProjects() {
                 <strong>Status:</strong> {selectedProject.status}
               </li>
               <li>
-                <strong>Início:</strong> {selectedProject.startDate} /{" "}
+                <strong>Início:</strong> {selectedProject.startDate} 
                 <strong>Concluído:</strong> {selectedProject.endDate}
               </li>
               <li>
