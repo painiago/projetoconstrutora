@@ -122,7 +122,7 @@ export default function Home() {
 </section>
 <section className={styles.containersectionvideo}>
   <div className={styles.containervideo}>
-    <video className={styles.video} src="/img/videohome22.mp4" loop autoPlay muted></video>
+    <video className={styles.video} src="/img/videohome22.mp4" loop autoPlay muted playsInline></video>
     <div className={styles.overlay}></div>
   </div>
 </section>

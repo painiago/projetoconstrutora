@@ -31,10 +31,10 @@ export default async function Icon({params}:IconProps ) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'black',
+          color: 'black', 
           borderRadius: '10px'
         }}
-      >EH
+      >EX
       </div>
     ),
     {
