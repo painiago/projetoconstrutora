@@ -316,6 +316,10 @@
     margin-bottom: 50px !important;
     color: #ff5700;
     margin-top: 20px;
+    @media (max-width:768px) {
+      font-size: 8rem;
+      text-align: center;
+    }
   }
 }
 
@@ -415,21 +419,19 @@
 
 // SECTION COLABORADOR -------
 .containerconferir {
-  display: flex;
-  // grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  max-width: 1360px;
+  max-width: 1660px;
   overflow-x: hidden;
-  
-  @media (max-width: 870px) {
-    // grid-template-columns: 1fr;
+
+  @media screen and (max-width: 970px) {
+    display: flex;
     flex-direction: column;
   }
-  
 }
-
 .contentconferir {
-  max-width: 100%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -438,7 +440,7 @@
 
   article {
     padding: 12px;
-  
+    max-width: 600px;
   }
 
   h4 {
@@ -518,14 +520,17 @@
 }
 
 .colaborador {
-  max-width: 600px;
-  img{
-    width: 100%;
-    height: auto;
-  }
 
-  @media (max-width: 768px) {
-    max-width: none;
+  img{
+      max-width: 100%;
+      height: auto;
+      
+    @media (max-width: 968px) {
+
+    }
+    @media (max-width: 768px) {
+     
+    }
   }
 }
 
@@ -544,7 +549,6 @@
 }
 
 .containersobreempresa{
-  
   height: 0 auto;
   max-width: 1000px; /* Define a largura máxima do contêiner */
   margin: 0 auto; /* Centraliza o contêiner na página */
@@ -554,9 +558,10 @@
     border-left: #FF5700 2px solid;
     font-size: 1.6rem; /* Define o tamanho da fonte do texto */
     padding: 0.75rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #927D7D;
-    font-weight: 400;
+    text-align: justify;
+    font-weight: 300;
     line-height: 1.5; /* Define o espaçamento entre as linhas */
   }
 
@@ -565,7 +570,7 @@
     font-size: 5.4rem; /* Define o tamanho da fonte do cabeçalho */
     margin-bottom: 50px !important; /* Adiciona um espaçamento abaixo do cabeçalho */
     color: #FF5700;
-    margin-top: 40px;
+    margin-top: 10px;
     @media screen and (max-width: 410px) {
       font-size: 4.7rem;
     }

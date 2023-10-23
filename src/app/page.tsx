@@ -131,11 +131,11 @@ export default function Home() {
 <section className={styles.containerconferir}>
 <div className={styles.contentconferir}>
   <article>
-    <h4>Casa dos Sonhos</h4>
-    <p> Deixe-se encantar pela harmonia entre 
-    conforto e sofisticação, em ambientes que
-    convidam a viver momentos inesquecíveis.</p>
-  </article>
+      <h4>Casa dos Sonhos</h4>
+      <p> Deixe-se encantar pela harmonia entre 
+      conforto e sofisticação, em ambientes que
+      convidam a viver momentos inesquecíveis.</p>
+  </article>  
   <div className={styles.buttonContainer2}>
    <Link href="#contato" className={styles.btnposition}>
     <button>
