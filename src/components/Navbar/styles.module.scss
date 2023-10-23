@@ -1,7 +1,7 @@
 .navbar {
  
   background-color: #fff;
-  padding: 10px;
+  padding: 2px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   justify-content: center;
   .containernavbar {
@@ -10,8 +10,6 @@
     margin:  0 auto;
     align-items: center;
     justify-content:space-between;
-    
-    
   }
 
   .imglogo {
@@ -36,12 +34,13 @@
     li {
       margin-right: 20px;
       color: #030303;
+      font-weight: 300;
      
 
       a {
         text-decoration: none;
         color: #030303;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         padding: 1rem;
         // border-radius: 16px;
         

@@ -13,11 +13,13 @@ import casa2 from '../../public/img/casa2.jpg'
 import casa3 from '../../public/img/comercial.jpg'
 import { ToastContainer} from 'react-toastify';
 import dynamic from 'next/dynamic';
+import Alert from '@/components/Alert/alert';
+import ScrollTop from '@/components/ScrollBtn/ScrollToTopButton';
+import ContatoHomeComponent from '../components/contatohome/page';
 
-
-const ContatoHomeComponent = dynamic (() => import('./contatohome/page'));
-const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
-const AlertComp = dynamic (() => import ('@/components/Alert/alert'))
+// const ContatoHomeComponent = dynamic (() => import('./contatohome/page'));
+// const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
+// const AlertComp = dynamic (() => import ('@/components/Alert/alert'))
 
 export default function Home() {
   return (
@@ -25,7 +27,7 @@ export default function Home() {
       <ScrollTop/>
       <ToastContainer
        className={styles.toast} />
-       <AlertComp/>
+       <Alert/>
     <section id="welcome-section" className={styles.welcomesection} >
       <div className={`${styles.container} ${styles.text}`} id="text">
          <h1>ExHouse Construtora</h1>
@@ -91,7 +93,6 @@ export default function Home() {
         <p>Morumbi</p>
        <Link href="/projeto/detailsprojetos/1">
        <button>Mais detalhes</button>
-       
        </Link> 
       </div>
       <div className={styles.allcards}>
@@ -133,18 +134,18 @@ export default function Home() {
     <p> Deixe-se encantar pela harmonia entre 
     conforto e sofisticação, em ambientes que
     convidam a viver momentos inesquecíveis.</p>
-    <div className={styles.buttonContainer2}>
-   <Link href="#contato">
+  </article>
+  <div className={styles.buttonContainer2}>
+   <Link href="#contato" className={styles.btnposition}>
     <button>
-      Venha agora  
+      Venha agora
     <FontAwesomeIcon icon={faCircleArrowRight} className={styles.arrow} />
     </button>
     </Link>
-    </div>
-  </article>
+  </div>
 </div>
-<div>
-  <Image src={colaborador} alt="" className={styles.colaborador} quality={75}/>
+<div className={styles.colaborador}>
+  <Image src={colaborador} alt=""  quality={75}/>
 </div>
 </section>
 <section className={styles.containercolorsobre}>

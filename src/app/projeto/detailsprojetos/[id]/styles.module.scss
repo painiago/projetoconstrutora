@@ -1,7 +1,3 @@
-
-
-
-
 .containermain{
   width: 100%;
   height: auto;
@@ -9,12 +5,35 @@
 }
 .containerdetails{
   background-color: #efefef;
-  
 }
+
 .containerglobalimgs{
-  display: flex;
+  // display: flex;
   padding: 10px;  
   
+}
+.return{
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  // background-color: #FF6F00;
+  &:hover{
+    color: #21201f;
+  }
+  svg{
+    font-size: 1.1rem;
+    color: #8a8d9b;
+  }
+  a:nth-of-type(1){
+    margin-left: 5px;
+    font-size: 1.5rem;
+    color: #8a8d9b;
+    font-weight: 300;
+    &:hover{
+      color: #21201f;
+    }
+  }
 }
 
 .containergeral{
@@ -32,8 +51,7 @@
 }
 
 .containeroneimg{
-  display: flex;
-  justify-content: center;
+  // display: flex;
   // background-color: #e7e3e3;
   border-radius: 12px;
   cursor: pointer;

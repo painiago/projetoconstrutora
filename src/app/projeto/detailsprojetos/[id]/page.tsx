@@ -5,14 +5,17 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import projectsData from "./projectsData";
 import Modal from "react-modal";
-import { faHeart, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft, faHeart, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import ScrollTop from "@/components/ScrollBtn/ScrollToTopButton";
+import BtnContact from "../../products/page";
+import Link from "next/link";
 
-const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
-const BtnContact = dynamic(() => import('../../products/page'));
+// const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
+// const BtnContact = dynamic(() => import('../../products/page'));
 
 
 
@@ -118,9 +121,13 @@ export default function DetailsProjects() {
   return (
     <>
       <main className={styles.containermain}>
-      <ScrollTop/>
         <section className={styles.containerdetails}>
+   
           <div className={styles.containerglobalimgs}>
+          <div className={styles.return}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+          <Link href="/projeto">Projetos</Link>
+          </div>  
             <div className={styles.containergeral}>
               <div className={styles.containeroneimg}>
                 <div onClick={() => openModal(selectedProject.image)}>
@@ -222,6 +229,7 @@ export default function DetailsProjects() {
         <img src={selectedImage} alt="imgmodal" className={styles.modalImage}/>
       </Modal>
       <BtnContact/>
+      <ScrollTop/>
     </>
   );
 }

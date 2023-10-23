@@ -49,6 +49,14 @@
 .spancontainer{
   border-left: 2px solid  #FF5700;
   margin-bottom: 40px;
+  p{
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto */
+    padding: 0.75rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.5; /* Define o espaçamento entre as linhas */
+  }
 }
 
 
@@ -59,16 +67,7 @@
   margin: 0 auto; /* Centraliza o contêiner na página */
   padding: 5rem 20px; /* Adiciona um espaçamento interno ao contêiner */
 
-  p{
-    font-size: 1.5rem; /* Define o tamanho da fonte do texto */
-    padding: 0.75rem;
-    font-family: 'Poppins',sans-serif;
-    margin-bottom: 10px;
-    color: #927D7D;
-    font-weight: 400;
-    
-    line-height: 1.5; /* Define o espaçamento entre as linhas */
-  }
+
  
  
 
@@ -127,9 +126,13 @@
   p:nth-of-type(1) {
     font-size: 1.5rem;
     margin-bottom: 15px;
+    font-weight: 300;
+    text-align: justify;
   }
   p:nth-of-type(2) {
     font-size: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
   }
 }
 
@@ -160,14 +163,11 @@
 }
 
 .socialiconsempresa svg {
-  // display: flex;
-  // flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 25px;
   height: 25px;
   margin: 0 10px;
-  cursor: pointer;
 
   @media (max-width:768px) {
     margin-top: 5px;
@@ -191,6 +191,8 @@
   p {
     font-size: 1.5rem;
     margin-bottom: 15px;
+    font-weight: 300;
+    text-align: justify;
   }
   @media (max-width:768px) {
     margin: 0 auto;

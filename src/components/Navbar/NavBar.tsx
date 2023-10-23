@@ -17,11 +17,14 @@ const NavBar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.containernavbar}>
-        <Image src={logo} alt="Logo" className={styles.imglogo} />
+        <Image src={logo} alt="Logo" className={styles.imglogo}  />
 
         <ul className={`${styles.navlist} ${showMenu ? styles.active : ''}`}>
           <li>
             <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/shop">Shop</Link>
           </li>
           <li>
             <Link href="/empresa">Empresa</Link>
@@ -31,7 +34,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link href="/contato">Contato</Link>
-          </li>
+          </li> 
         </ul>
         <div className={`${styles.menuIcon} ${showMenu ? styles.active : ''}`} onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />

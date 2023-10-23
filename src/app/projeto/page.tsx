@@ -8,13 +8,10 @@ import Image from "next/image";
 import capaempresa from '../../../public/img/capem2.jpg'
 import BtnContato from "./products/page";
 import dynamic from "next/dynamic";
-// import { Metadata } from 'next';
-const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
+import ScrollTop from "@/components/ScrollBtn/ScrollToTopButton";
 
-// export const metadata: Metadata = {
-//   title: 'Projetos',
-//   description: 'Projetos realizados por nossa empresa Exhouse Construtora.',
-// }
+// import { Metadata } from 'next';
+// const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
 
 export default function Projetos() {
   const projects = [
@@ -34,7 +31,6 @@ export default function Projetos() {
 
   return (
     <main>
-      
       <div className={styles.containerempresa}>
         <div className={styles.containercapa}>
           <div className={styles.contentempresa}>

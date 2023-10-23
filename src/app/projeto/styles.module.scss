@@ -2,10 +2,18 @@
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 100px !important;
-
   h1{
-    font-size: 6.1rem;
-   
+    font-size: 13rem;
+    text-align: center;
+    background-image: linear-gradient(to right, #fb810e, #000);
+    -webkit-background-clip: text;
+    color: transparent;
+    @media (max-width:1168px) {
+      font-size: 7rem;
+     }
+    @media (max-width:768px) {
+    font-size: 6rem;
+   }
   }
 
   img{
@@ -24,12 +32,12 @@
 
 }
 .contentempresa{
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  @media (max-width:768px) {
+  @media (max-width:1011px) {
     grid-template-columns: 1fr;
     margin-top: 50px;
     display: flex;
