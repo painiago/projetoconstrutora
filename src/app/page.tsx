@@ -16,7 +16,7 @@ import dynamic from 'next/dynamic';
 import Alert from '@/components/Alert/alert';
 import ScrollTop from '@/components/ScrollBtn/ScrollToTopButton';
 
-const ContatoHomeComponent = dynamic (() => import('@/components/contatohome/page'));
+const ContatoHomeComponent = dynamic (() => import('../components/contatohome/page'));
 // const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
 // const AlertComp = dynamic (() => import ('@/components/Alert/alert'))
 
