@@ -13,13 +13,13 @@ import casa2 from '../../public/img/casa2.jpg'
 import casa3 from '../../public/img/comercial.jpg'
 import { ToastContainer} from 'react-toastify';
 import dynamic from 'next/dynamic';
-// import Alert from '@/components/Alert/alert';
-// import ScrollTop from '@/components/ScrollBtn/ScrollToTopButton';
-// import ContatoHome from '@/components/contatohome/contatohome';
+import Alert from '@/components/Alert/alert';
+import ScrollTop from '@/components/ScrollBtn/ScrollToTopButton';
+import ContatoHome from '@/components/contatohome/contatohome';
 
-const ContatoHome = dynamic (() => import('@/components/contatohome/contatohome'));
-const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
-const Alert = dynamic (() => import ('@/components/Alert/alert'))
+// const ContatoHomeComponent = dynamic (() => import('@/components/contatohome/contatohome'));
+// const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
+// const AlertComp = dynamic (() => import ('@/components/Alert/alert'))
 
 export default function Home() {
   return (
