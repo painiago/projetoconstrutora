@@ -15,7 +15,7 @@ import { ToastContainer} from 'react-toastify';
 import dynamic from 'next/dynamic';
 import Alert from '@/components/Alert/alert';
 import ScrollTop from '@/components/ScrollBtn/ScrollToTopButton';
-import ContatoHome from '@/components/contatohome/contatohome';
+import ContatoHome from '../components/contatohome/contatohome';
 
 // const ContatoHomeComponent = dynamic (() => import('@/components/contatohome/contatohome'));
 // const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
