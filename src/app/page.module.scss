@@ -200,20 +200,20 @@
   border-radius: 12px;
   width: 80%;
   max-width: 900px;
-  height: 200px;
-  margin-top: 20px;
+  height: auto;
+  margin-top: 0px;
   margin-bottom: 100px;
   
 }
 @media (max-width:878px) {
   .box{
-    margin-top: 250px !important;
+    margin-top: 20px !important;
   }
   
 }
 @media (max-width:574px) {
   .box{
-    margin-top: 450px !important;
+    margin-top: 20px !important;
   }
   
 }
@@ -292,23 +292,27 @@
   margin-bottom: 50px;
   
   @media (max-width: 1023px) {
-    margin-top: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 10px;
     
   }
   @media (max-width: 768px) {
-    margin-top: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 10px;
     
   }
   @media (max-width: 668px) {
-    margin-top: 500px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 10px;
     
   }
 }
 
 .cardsprojetos {
-  margin-top: 16rem !important;
+  margin-top: 10rem !important;
   h3 {
     // text-align: center;
     font-family: "Roboto", sans-serif;
@@ -319,8 +323,14 @@
     @media (max-width:768px) {
       font-size: 6rem;
       text-align: center;
-      margin-top: 5px;
+     
     }
+  }
+  @media (max-width:968px) {
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 2rem !important;
+   
   }
 }
 
