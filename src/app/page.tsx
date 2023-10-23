@@ -12,13 +12,13 @@ import casa1 from '../../public/img/casa1.jpg'
 import casa2 from '../../public/img/casa2.jpg'
 import casa3 from '../../public/img/comercial.jpg'
 import { ToastContainer} from 'react-toastify';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 import Alert from '@/components/Alert/alert';
 import ScrollTop from '@/components/ScrollBtn/ScrollToTopButton';
 
-// import ContatoHome from '@/components/contatohome/contatoHome';
+import ContatoHomeComponent from '@/components/contatohome/contatoHome';
 
-// const ContatoHomeComponent = dynamic (() => import('../components/contatohome/contatoHome'));
+// const ContatoHomeComponent = dynamic (() => import('@/components/contatohome/contatoHome'));
 // const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
 // const AlertComp = dynamic (() => import ('@/components/Alert/alert'))
 
@@ -161,7 +161,7 @@ export default function Home() {
           </span>
       </div>
     </section>
-    {/* <ContatoHomeComponent/> */}
+    <ContatoHomeComponent/>
     </main>
   )
 }
