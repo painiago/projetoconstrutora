@@ -15,9 +15,10 @@ import { ToastContainer} from 'react-toastify';
 import dynamic from 'next/dynamic';
 import Alert from '@/components/Alert/alert';
 import ScrollTop from '@/components/ScrollBtn/ScrollToTopButton';
-import ContatoHome from '@/components/contatohome/contatoHome';
 
-// const ContatoHomeComponent = dynamic (() => import('@/components/contatohome/contatoHome'));
+// import ContatoHome from '@/components/contatohome/contatoHome';
+
+// const ContatoHomeComponent = dynamic (() => import('../components/contatohome/contatoHome'));
 // const ScrollTop = dynamic(() => import('@/components/ScrollBtn/ScrollToTopButton'));
 // const AlertComp = dynamic (() => import ('@/components/Alert/alert'))
 
@@ -160,7 +161,7 @@ export default function Home() {
           </span>
       </div>
     </section>
-    <ContatoHome/>
+    {/* <ContatoHomeComponent/> */}
     </main>
   )
 }
